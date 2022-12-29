@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
+:root {
+    --colorProject: blueviolet;
+    --colorBox2: rgb(255, 251, 235, 0.9);
+    --raduiss: 10px;
+    --font300: 'Raleway', sans-serif;
+    --font400: 'EB Garamond', serif;
+    --containerColor: rgb(255, 251, 235, 0.8);
+}
+
+body {
+    margin: 0;
+    background-color: var(--colorProject);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80' width='80' height='80'%3E%3Cpath fill='%23ffffff' fill-opacity='0.4' d='M14 16H9v-2h5V9.87a4 4 0 1 1 2 0V14h5v2h-5v15.95A10 10 0 0 0 23.66 27l-3.46-2 8.2-2.2-2.9 5a12 12 0 0 1-21 0l-2.89-5 8.2 2.2-3.47 2A10 10 0 0 0 14 31.95V16zm40 40h-5v-2h5v-4.13a4 4 0 1 1 2 0V54h5v2h-5v15.95A10 10 0 0 0 63.66 67l-3.47-2 8.2-2.2-2.88 5a12 12 0 0 1-21.02 0l-2.88-5 8.2 2.2-3.47 2A10 10 0 0 0 54 71.95V56zm-39 6a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm40-40a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM15 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm40 40a2 2 0 1 0 0-4 2 2 0 0 0 0 4z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.overlay {
+    position: absolute;
+    top:0;
+    left:0;
+    width:100vw;
+    height:100vh;
+    background-color: rgba(37, 23, 73, 0.7);
+}
+
+
+
+h1.add {
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 20%;
+    border-radius: var(--raduiss);
+    padding: 20px;
+    font-family: var(--font300);
+    font-size: 22px;
+    margin: 40px auto;
+    background-color: var(--containerColor);
+    text-align: center;
+}
+
+h1.add:hover {
+    background-color: var(--colorBox2);
+}
+
+@media screen and (max-width:1000px) {
+    h1.add {
+        width: 90%;
+    }
+}
+
+
+
+.container {
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+div.x {
+    text-align:right;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+div.x a { 
+    text-decoration: none;
+}
+
+.box {
+    display: inline-block;
+    background-color: var(--containerColor);
+    border-radius: var(--raduiss);
+    padding: 10px 20px;
+    margin: 20px;
+       
+}
+
+.box:hover {
+    background-color: var(--colorBox2);
+}
+
+.data {
+    display: flex;
+    flex-direction: row;
+}
+
+img.image {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+a.name {
+    font-family: var(--font400);
+    display: flex;
+    align-items: center;
+    margin: 0;
+    text-decoration: none;
+    color:black;
+    font-size: 25px;
+}
+
+
+/* FORM */
+
+.formdiv {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:40%;
+    left:37%;
+    width: 500px;
+    height:auto;
+    background-color: aliceblue;
+}
+
+@media screen and (max-width:800px) {
+    .formdiv {
+        top: 35%;
+        left:5%;
+        width: 90vw;
+        height:auto;
+        background-color: aliceblue;
+    }
+}
+
+.titlediv {
+    text-align: left;
+    background-color: var(--colorProject);
+    color:white;
+    padding:15px 20px;
+    font-family: var(--font300);
+    font-size:1.2rem;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.xx {
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 1rem;
+    font-family: var(--font300);
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    outline: var(--colorProject);
+    border: 1px solid var(--colorProject);
+} 
+
+input:focus {
+    outline: 1px solid var(--colorProject);
+}
+
+label {
+    font-family: var(--font400);
+    font-size: 1.2rem;
+    color:var(--colorProject);
+    
+}
+
+button {
+    width:30%;
+    padding:5px;
+    border-radius: 5px;
+    background-color: var(--colorProject);
+    color:white;
+    font-weight: 600;
+    font-size: 0.9rem;
+    font-family: var(--font300);
+}
