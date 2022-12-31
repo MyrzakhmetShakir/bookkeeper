@@ -46,7 +46,7 @@ function createField(name, email, form) {
                 dataName.href = ("https://" + email).toLowerCase();
             } else { dataName.href = email.toLowerCase();  }
 
-        const expression = /https?:\/\/(www\.)?[a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([a-zA-Z0-9()@:%_\+~#?&//=]*)/g;
+        const expression = /https?:\/\/(www\.)?[a-zA-Z0-9@:%._\+~#=\-]{1,256}\.[a-zA-Z0-9()]{1,6}\b([a-zA-Z0-9()@:%_\+~#?&//=]*)/g;
         const newReg = new RegExp(expression);
             if(dataName.href.match(newReg)) {
                 storageStatus = true;
